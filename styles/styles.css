@@ -1,17 +1,43 @@
 .fira-sans-normal {
+    background-color: whitesmoke;
     font-family: "Fira Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "width" 100;
   }
-
-  
+/* shared styles */
+.donate , .news-letter,.connect-title{
+    text-align: center;
+}
+.btn-secondary,.btn-news, .btn-donate{
+    background-color: #006a50;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-family: "Fira Sans", serif;
+    border:1px solid rgb(0, 106, 80);
+   
+} 
+.section-description ,.vision-description, .news-card-subtitle, .news-card-description{
+    font-size: 16px;
+    font-weight: normal;
+    color: #0E0E0E;
+    opacity:70%;
+}
+.visions,.Recent_news,.donate, .news-letter, .quote{
+    margin: 0 100px 0 100px;
+}
+.btn-learn:hover,.btn-primary:hover ,.btn-secondary:hover, .btn-news:hover, .donate-amount:hover, .btn-donate:hover,.donate-amount-click:hover{
+    background-color: #544d8c;
+}
 /* nav styles */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:0 230px ;
+    margin:0 100px ;
 }
 .nav-title{
     font-size: 32px;
@@ -32,22 +58,12 @@ nav ul li{
     border:1px solid rgb(0, 106, 80);
    
 }
-.btn-secondary,.btn-news{
-    background-color: #006a50;
-    font-weight: 700;
-    font-size: 18px;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-family: "Fira Sans", serif;
-    border:1px solid rgb(0, 106, 80);
-   
-}
+
 /* banner styles */
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 230px;
+    margin: 0 100px 0 100px;
     background-color: #C6E4D6;
     padding: 70px;
     border-radius: 24px;
@@ -78,24 +94,18 @@ nav ul li{
     font-weight: bold;
     color: #0E0E0E;
 }
-.section-description ,.vision-description, .news-card-subtitle, .news-card-description{
-    font-size: 16px;
-    font-weight: normal;
-    color: #0E0E0E;
-    opacity:70%;
-}
+
 .visions-container{
     display:flex;
     align-items: center;
     gap: 40px;
 
 }
-.visions,.Recent_news,.donate{
-    margin: 0 35px 0 230px;
-}
+
 .vision{
     padding:32px;
     border-radius: 16px;
+    margin-bottom: 32px;
 }
 .vision-title{
     font-size: 20px;
@@ -113,9 +123,7 @@ nav ul li{
     font-weight: 700;
     border: none;
 }
-.btn-learn:hover,.btn-primary:hover ,.btn-secondary:hover, .btn-news:hover, .donate-amount:hover,.donate-amount-click:hover{
-    background-color: #9492a3;
-}
+
 .visions .vision:nth-child(1){
     background-color:rgb(84,144,245,0.2);
 
@@ -128,11 +136,25 @@ nav ul li{
     background-color:#F7EBCF;
 
 }
+/* quote styles */
+.quote{
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px 28px;
+    background-image: url('../assets/quote-bg.png');
+    background-repeat: no-repeat;
+    
+}
 /* news section styles */
 .news{
+    background-color: white;
+    padding:48px 48px;
+    border-radius: 24px;
     display:flex;
     gap: 32px;
+    margin-bottom: 24px;
 }
+
 .news-image{
     max-width: 1280px;
     max-height: 402px;
@@ -150,9 +172,10 @@ nav ul li{
 }
 /* donation styles */
 .donate{
-    text-align: center;
+    padding: 80px;
 }
 .donate-money{
+    margin-top: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,7 +183,7 @@ nav ul li{
 }
 .donate-amount {
     border: none;
-    background-color: rgb(244, 240, 240);
+    background-color: white;
     border-color: rgb(14,14,14,0.15);
     padding: 40px;
     border-radius: 16px;
@@ -170,6 +193,7 @@ nav ul li{
     opacity: 80%;
   }
   .donate-amount-click{
+    
     border: none;
     background-color:#C6E4D6;
     border-color: rgb(14,14,14,0.15);
@@ -179,6 +203,59 @@ nav ul li{
     font-weight: bold;
     color: #0E0E0E;
     opacity: 80%;
+  }
+  .donate-other input{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 20px 40px;
+    font-size: 18px;
+    width: 1032px;
+    max-height: 64px;
+    border: none;
+  }
+  /* subscribe styles */
+  .mail-enter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .news-letter{
+    background-color: #c6e4d6;
+    margin: 0 100px 0 100px;
+    padding: 80px 100px;
+    border-radius: 24px;
+    max-width: 1280px;
+    max-height: 395px;
+  }
+  .mail-enter input {
+    border-radius: 8px 0px 0px 8px;
+    padding: 17px 40px;
+    font-size: 18px;
+    max-width: 600px;
+    border: none;
+  }
+  .mail-enter button {
+    border-radius: 0px 8px 8px 0px;
+    background-color: #006a50;
+    padding: 17px 34px;
+    font-size: 18px;
+    font-weight: bold;
+    max-width:150px;
+    color: white;
+    border: none;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+  }
+  .connect-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0E0E0E;
+    opacity:80%;
   }
 
 
