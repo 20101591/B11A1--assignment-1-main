@@ -113,7 +113,7 @@ nav ul li{
     font-weight: 700;
     border: none;
 }
-.btn-learn:hover,.btn-primary:hover ,.btn-secondary:hover, .btn-news:hover{
+.btn-learn:hover,.btn-primary:hover ,.btn-secondary:hover, .btn-news:hover, .donate-amount:hover,.donate-amount-click:hover{
     background-color: #9492a3;
 }
 .visions .vision:nth-child(1){
@@ -148,7 +148,37 @@ nav ul li{
     display: flex;
     gap: 18px;
 }
+/* donation styles */
 .donate{
     text-align: center;
 }
+.donate-money{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.donate-amount {
+    border: none;
+    background-color: rgb(244, 240, 240);
+    border-color: rgb(14,14,14,0.15);
+    padding: 40px;
+    border-radius: 16px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E0E0E;
+    opacity: 80%;
+  }
+  .donate-amount-click{
+    border: none;
+    background-color:#C6E4D6;
+    border-color: rgb(14,14,14,0.15);
+    padding: 40px;
+    border-radius: 16px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0E0E0E;
+    opacity: 80%;
+  }
+
 
