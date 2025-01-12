@@ -30,7 +30,7 @@
     margin: 0 100px 0 100px;
 }
 .btn-learn:hover,.btn-primary:hover ,.btn-secondary:hover, .btn-news:hover, .donate-amount:hover, .btn-donate:hover,.donate-amount-click:hover{
-    background-color: #544d8c;
+    background-color: #2a1c95;
 }
 /* nav styles */
 nav{
@@ -244,6 +244,9 @@ nav ul li{
     color: white;
     border: none;
   }
+  .mail-enter button:hover{
+    background-color: #2a1c95;
+}
   .icons{
     display: flex;
     align-items: center;
